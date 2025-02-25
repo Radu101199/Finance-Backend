@@ -16,4 +16,6 @@ public interface UserRepository extends CrudRepository<UserEntity, Long> {
             @Param("email") String email,
             @Param("password") String password
     );
+
+    Object findByEmail(String email);
 }

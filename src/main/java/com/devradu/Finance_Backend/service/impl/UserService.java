@@ -41,4 +41,9 @@ public class UserService implements IUserService {
                 .collect(Collectors.toList());
     }
 
+    @Override
+    public Optional<UserEntity> findByEmail(String email) {
+        return Optional.empty();
+    }
+
 }

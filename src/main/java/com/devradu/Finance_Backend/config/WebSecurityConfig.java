@@ -44,10 +44,6 @@ public class WebSecurityConfig{
         return new JdbcUserDetailsManager(dataSource);
     }
 
-    @Bean
-    public PasswordEncoder passwordEncoder() {
-        return  PasswordEncoderFactories.createDelegatingPasswordEncoder();
-    }
 
     @Bean
     public GrantedAuthoritiesMapper authoritiesMapper() {
