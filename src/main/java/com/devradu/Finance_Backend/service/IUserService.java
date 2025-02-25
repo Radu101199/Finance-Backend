@@ -1,6 +1,7 @@
 package com.devradu.Finance_Backend.service;
 
 import com.devradu.Finance_Backend.domain.entities.UserEntity;
+import org.apache.catalina.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,4 +14,6 @@ public interface IUserService {
     Optional<UserEntity> findByEmailAndPassword(String email, String password);
 
     List<UserEntity> findAll();
+
+    Optional<UserEntity>  findByEmail(String email);
 }
